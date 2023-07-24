@@ -1,0 +1,39 @@
+// *************************** FONTS **************************
+
+@font-face {
+    font-family: "Allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+// **************************** COLORS **************************
+
+$withe1: #eeeeee;
+$black1: #21201e;
+$brown: #96673f;
+$grey: #595956;
+
+$font1: "Allura";
+$font2: "Poppins", sans-serif;
+$font3: "Roboto", sans-serif;
+
+// *************************** GENERAL SETT ***************************
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: $font2;
+}

@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  padding: 0 50px;
+  color: #eeeeee;
+}
+header nav {
+  height: 12vh;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav h2 {
+  width: 10%;
+  font-family: "Allura";
+  font-weight: 100;
+  font-size: 2rem;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav ul li {
+  cursor: pointer;
+}
+header nav .nav-left {
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .nav-left li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+header nav .nav-right {
+  width: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .nav-right i {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header nav .nav-right i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+header .header-container {
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-container div {
+  margin-top: -150px;
+}
+header .header-container div h2 {
+  color: #96673f;
+  font-family: "Allura";
+  font-size: 2.5rem;
+}
+header .header-container div h1 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+header .header-container div img {
+  width: 30px;
+  height: 30px;
+  margin: 30px 0;
+}
+header .header-container div p {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 0.8rem;
+}
+
+main .section-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 450px;
+}
+main .section-1 .right-part {
+  background: url(/assets/img/store-01.jpg) center/cover;
+}/*# sourceMappingURL=index.css.map */
