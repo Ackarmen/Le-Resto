@@ -18,7 +18,7 @@
 $withe1: #eeeeee;
 $black1: #21201e;
 $brown: #96673f;
-$grey: #595956;
+$grey: #b3b3b3;
 
 $font1: "Allura";
 $font2: "Poppins", sans-serif;
@@ -36,4 +36,5 @@ $font3: "Roboto", sans-serif;
 body {
     text-align: center;
     font-family: $font2;
+    background: $black1;
 }

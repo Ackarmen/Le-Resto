@@ -1,0 +1,82 @@
+main {
+    .section-3 {
+        .open-book-container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            width: 70%;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        .left-part {
+            background: black;
+            color: $brown;
+
+            .left-container {
+                margin: 15px;
+                padding: 10px;
+                border: 1px dashed $brown;
+
+                h2 {
+                    font-family: $font1;
+                }
+
+                h3,
+                p {
+                    color: $withe1;
+                    margin: 0 0 35px;
+                }
+
+                h4 {
+                    margin: 30px 0 15px;
+                }
+            }
+        }
+        .right-part {
+            background: $withe1;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            div {
+                h2 {
+                    font-family: $font1;
+                    color: $brown;
+                }
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
+                img {
+                    width: 25px;
+                }
+
+                .form-container {
+                    margin: 30px 0 40px;
+                    gap: 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    input,
+                    select {
+                        outline: none;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid $grey;
+                        padding: 10px;
+                    }
+                }
+
+                #submit {
+                    text-transform: uppercase;
+                    width: 200px;
+                    height: 50px;
+                    background: $black1;
+                    color: $withe1;
+                    border-radius: 50px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

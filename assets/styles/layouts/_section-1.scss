@@ -3,6 +3,37 @@ main {
         display: grid;
         grid-template-columns: 50% 50%;
         height: 450px;
+        background: $withe1;
+
+        .left-part {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            margin: 15px;
+            border: 1px dashed $brown;
+
+            h2 {
+                font-family: $font1;
+                color: $brown;
+            }
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            #logo {
+                width: 30px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            img {
+                border-radius: 360px;
+                width: 80px;
+            }
+        }
 
         .right-part {
             background: url(/assets/img/store-01.jpg) center/cover;
