@@ -11,28 +11,29 @@
   src: url(../fonts/Roboto-Light.ttf);
 }
 * {
-  list-style: none;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #21201e;
 }
 
 header {
   background: url(/assets/img/bg-slider-06.jpg) center/cover;
   padding: 0 50px;
-  color: #eeeeee;
+  color: #eee;
 }
 header nav {
   height: 12vh;
-  width: 90%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,12 +43,15 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-header nav h2 {
-  width: 10%;
+header nav .logo {
   font-family: "Allura";
   font-weight: 100;
   font-size: 2rem;
+  text-align: left;
+  width: 10%;
 }
 header nav ul {
   display: -webkit-box;
@@ -57,7 +61,7 @@ header nav ul {
 header nav ul li {
   cursor: pointer;
 }
-header nav .nav-left {
+header nav .nav-middle {
   width: 70%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -66,7 +70,7 @@ header nav .nav-left {
       -ms-flex-align: center;
           align-items: center;
 }
-header nav .nav-left li {
+header nav .nav-middle li {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
@@ -103,7 +107,7 @@ header .header-container div {
   margin-top: -150px;
 }
 header .header-container div h2 {
-  color: #96673f;
+  color: rgb(166, 114, 69);
   font-family: "Allura";
   font-size: 2.5rem;
 }
@@ -118,7 +122,7 @@ header .header-container div img {
   height: 30px;
   margin: 30px 0;
 }
-header .header-container div p {
+header .header-container div h6 {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 0.8rem;
@@ -128,7 +132,7 @@ main .section-1 {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 450px;
-  background: #eeeeee;
+  background: #eee;
 }
 main .section-1 .left-part {
   display: grid;
@@ -137,11 +141,11 @@ main .section-1 .left-part {
           align-items: center;
   justify-items: center;
   margin: 15px;
-  border: 1px dashed #96673f;
+  border: 1px dashed rgb(166, 114, 69);
 }
 main .section-1 .left-part h2 {
   font-family: "Allura";
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 main .section-1 .left-part h3 {
   text-transform: uppercase;
@@ -165,7 +169,7 @@ main .section-2 {
 }
 main .section-2 .menu-header h2 {
   font-family: "Allura";
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 main .section-2 .menu-header img {
   width: 30px;
@@ -184,19 +188,19 @@ main .section-2 .menu-header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #eeeeee;
+  color: #eee;
 }
 main .section-2 .menu-header ul li {
   height: 40%;
-  border-bottom: 0.4px solid #eeeeee;
+  border-bottom: 0.4px solid #eee;
 }
 main .section-2 .menu-container {
-  background: #eeeeee;
+  background: #eee;
   width: 60%;
   height: 600px;
   margin: 0 auto;
   padding: 15px 0;
-  border-top: 4px solid #96673f;
+  border-top: 4px solid rgb(166, 114, 69);
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(4, 1fr);
@@ -208,7 +212,7 @@ main .section-2 .menu-container .menu {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 20px;
-  border-bottom: 1px dashed #b3b3b3;
+  border-bottom: 1px dashed rgb(182, 182, 182);
 }
 main .section-2 .menu-container .menu img {
   border-radius: 50px;
@@ -217,15 +221,15 @@ main .section-2 .menu-container .menu h4 {
   text-transform: uppercase;
   text-align: left;
   font-size: 0.8rem;
-  color: #b3b3b3;
+  color: rgb(182, 182, 182);
 }
 main .section-2 .menu-container .menu p {
   text-align: left;
   font-weight: 100;
-  color: #b3b3b3;
+  color: rgb(182, 182, 182);
 }
 main .section-2 .menu-container .menu span {
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 
 main .section-3 .open-book-container {
@@ -237,26 +241,26 @@ main .section-3 .open-book-container {
 }
 main .section-3 .left-part {
   background: black;
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 main .section-3 .left-part .left-container {
   margin: 15px;
   padding: 10px;
-  border: 1px dashed #96673f;
+  border: 1px dashed rgb(166, 114, 69);
 }
 main .section-3 .left-part .left-container h2 {
   font-family: "Allura";
 }
 main .section-3 .left-part .left-container h3,
 main .section-3 .left-part .left-container p {
-  color: #eeeeee;
+  color: #eee;
   margin: 0 0 35px;
 }
 main .section-3 .left-part .left-container h4 {
   margin: 30px 0 15px;
 }
 main .section-3 .right-part {
-  background: #eeeeee;
+  background: #eee;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -265,7 +269,7 @@ main .section-3 .right-part {
 }
 main .section-3 .right-part div h2 {
   font-family: "Allura";
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 main .section-3 .right-part div h3 {
   text-transform: uppercase;
@@ -285,7 +289,7 @@ main .section-3 .right-part div .form-container select {
   outline: none;
   background: none;
   border: none;
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid rgb(182, 182, 182);
   padding: 10px;
 }
 main .section-3 .right-part div #submit {
@@ -293,7 +297,7 @@ main .section-3 .right-part div #submit {
   width: 200px;
   height: 50px;
   background: #21201e;
-  color: #eeeeee;
+  color: #eee;
   border-radius: 50px;
   outline: none;
 }
@@ -303,10 +307,10 @@ main .section-4 {
 }
 main .section-4 .events-title h2 {
   font-family: "Allura";
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 main .section-4 .events-title h3 {
-  color: #eeeeee;
+  color: #eee;
 }
 main .section-4 .events-title img {
   margin: 30px 0;
@@ -377,13 +381,13 @@ main .section-4 .events-container .event-2 .left-2 span {
   padding: 15px;
   left: 50%;
   background: #21201e;
-  color: #eeeeee;
+  color: #eee;
 }
 main .section-4 .events-container .event-1 .right-1,
 main .section-4 .events-container .event-1 .right-2,
 main .section-4 .events-container .event-2 .right-1,
 main .section-4 .events-container .event-2 .right-2 {
-  background: #eeeeee;
+  background: #eee;
   width: 100%;
   height: 100%;
   text-align: left;
@@ -393,7 +397,7 @@ main .section-5 {
   height: 500px;
 }
 main .section-5 .ceo {
-  background: #eeeeee;
+  background: #eee;
   width: 60%;
   margin: 0 auto;
   padding: 50px;
@@ -415,7 +419,7 @@ main .section-5 .ceo h3 {
   margin: 30px 0 15px;
 }
 main .section-5 .ceo span {
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 
 footer {
@@ -440,10 +444,10 @@ footer .footer-container .left-footer h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-family: "Allura";
-  color: #96673f;
+  color: rgb(166, 114, 69);
 }
 footer .footer-container .left-footer p {
-  color: #eeeeee;
+  color: #eee;
   line-height: 30px;
 }
 footer .footer-container .right-footer {
@@ -459,7 +463,7 @@ footer .footer-container .right-footer {
           justify-content: space-evenly;
   height: 80%;
   padding-left: 40px;
-  color: #eeeeee;
+  color: #eee;
 }
 footer .footer-container .right-footer .contact-mail {
   display: -webkit-box;
@@ -476,7 +480,7 @@ footer .footer-container .right-footer .contact-mail h4 {
   margin-bottom: 10px;
 }
 footer .footer-container .right-footer .contact-mail input {
-  border: 0.5px solid #b3b3b3;
+  border: 0.5px solid rgb(182, 182, 182);
   width: 50%;
   padding: 5px;
   outline: none;
