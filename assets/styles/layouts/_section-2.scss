@@ -1,6 +1,17 @@
 main {
     .section-2 {
-        padding: 70px;
+        padding: 70px 70px 200px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            background: url(/assets/img/bg-menu-01.jpg) center/cover;
+            left: 0;
+            top: 400px;
+        }
 
         .menu-header {
             h2 {
@@ -29,6 +40,9 @@ main {
         }
 
         .menu-container {
+            // pour que le zindex soit valid, ne pas oublier de rajouter une position relative à l'élement
+            position: relative;
+            z-index: 100;
             background: $withe1;
             width: 60%;
             height: 600px;
@@ -47,6 +61,7 @@ main {
                 border-bottom: 1px dashed $grey;
 
                 img {
+                    object-fit: cover;
                     border-radius: 50px;
                 }
 
