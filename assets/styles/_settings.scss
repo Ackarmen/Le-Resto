@@ -38,6 +38,12 @@ $brown: rgb(166, 114, 69);
     justify-content: $space;
 }
 
+@mixin brownfont {
+    font-family: $font1;
+    color: $brown;
+    font-size: 1.5rem;
+}
+
 // *************************** GENERAL SETT ***************************
 
 * {
